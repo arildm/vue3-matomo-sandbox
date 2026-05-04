@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useMatomo } from "vue3-matomo";
+
+useMatomo().value?.trackEvent("foo", "bar");
+</script>
 
 <template>
   <h1>You did it!</h1>
